@@ -39,6 +39,9 @@ __m512i matmul(
 
         Note: Additionally, this operation can be parallelized across cores
 
+        Pending: Look for an AVX512 instruction that repeats a segment of a register across another register.
+                 This can extend the B matrix even more
+                 
         Pending: Create a function that performs matrix breaking operations 
                  and delegates multiplications to these low-level functions
 
